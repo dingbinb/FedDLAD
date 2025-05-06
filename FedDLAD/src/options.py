@@ -23,10 +23,10 @@ def args_parser():
                         help='server learning rate')
 
     parser.add_argument('--base_class', type=int, default=0,
-                        help="ground truth label")
+                        help="ground-truth label")
 
     parser.add_argument('--target_class', type=int, default=5,
-                        help="target label")
+                        help="target-label")
 
     parser.add_argument('--poison_frac', type=float, default=0.1,
                         help="target_class poisoning ratio for backdoor attack")
@@ -87,7 +87,7 @@ def args_parser():
     parser.add_argument('--pg', type=int, default=5, help="pardoned group size")
 
 
-    # snowball settings
+    # SnowBall settings
     parser.add_argument('--model', default='CNN_FMNIST', type=str)
 
     parser.add_argument('--ct', default=10, type=int,
