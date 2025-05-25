@@ -28,7 +28,7 @@ def args_parser():
     parser.add_argument('--target_class', type=int, default=5,
                         help="target-label")
 
-    parser.add_argument('--poison_frac', type=float, default=0.1,
+    parser.add_argument('--poison_frac', type=float, default=0.2,
                         help="target_class poisoning ratio for backdoor attack")
 
     parser.add_argument('--trigger', type=str, default='CBA',
@@ -82,7 +82,7 @@ def args_parser():
     #COF
     parser.add_argument('--bg', type=int, default=12, help="benign group size")
     #IQR
-    parser.add_argument('--iqr_scale', type=float, default=0.7, help='scale factor for IQR-based outlier thresholding')#svhn 0.7,cifar10 0.6
+    parser.add_argument('--iqr_scale', type=float, default=0.6, help='scale factor for IQR-based outlier thresholding')
     #Pardoned
     parser.add_argument('--pg', type=int, default=3, help="pardoned group size")
 

@@ -311,8 +311,8 @@ def add_trigger(x, dataset='cifar10', trigger='CBA', agent_idx=-1):
 
         elif trigger == 'CBA':
             for d in range(0, 3):
-                for i in range(27, 30):
-                    for j in range(27, 30):
+                for i in range(26, 30):
+                    for j in range(26, 30):
                         x[d][i, j]= 255
 
     
